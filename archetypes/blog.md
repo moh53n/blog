@@ -3,9 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 author: "Mohsen Tahmasebi"
 description: ""
-tags:
-  - ""
+tags: []
 draft: true
 slug: "{{ .Name }}"
 ---
-

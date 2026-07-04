@@ -5,8 +5,7 @@
 
   <section class="portfolio-section post-section">
     <article class="blog-post-content">
-      {{- $author := .Params.author | default .Site.Params.author }}
-      <p class="post-meta">{{ $author }}, <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time></p>
+      {{ partial "post-meta.html" . }}
       {{- with .Description }}
         <p>{{ . }}</p>
       {{- end }}

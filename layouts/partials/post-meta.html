@@ -1,0 +1,7 @@
+{{- $author := .Params.author | default .Site.Params.author -}}
+<p class="post-meta">
+  {{- with $author -}}
+    <span class="post-meta__author">{{ . }}</span><span aria-hidden="true">, </span>
+  {{- end -}}
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+</p>

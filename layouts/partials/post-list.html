@@ -14,9 +14,8 @@
       {{- with .Params.external_url }}
         {{- $href = . }}
       {{- end }}
-      {{- $author := .Params.author | default .Site.Params.author }}
       <article class="blog-post-card">
-        <p class="post-meta">{{ $author }}, <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time></p>
+        {{ partial "post-meta.html" . }}
         <h3>{{ .Title }}</h3>
         {{- with .Description }}
           <p>{{ . }}</p>
