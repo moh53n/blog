@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <section class="portfolio-hero" aria-labelledby="post-title">
+    <h2 id="post-title">{{ .Title }}</h2>
+  </section>
+
+  <section class="portfolio-section">
+    <article class="blog-post-card">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+      {{- with .Description }}
+        <p>{{ . }}</p>
+      {{- end }}
+      {{ .Content }}
+      {{- with .Params.external_url }}
+        <a href="{{ . }}">Read on Medium</a>
+      {{- end }}
+    </article>
+  </section>
+{{ end }}

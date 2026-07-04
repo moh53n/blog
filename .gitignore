@@ -45,6 +45,7 @@ Desktop.ini
 .vercel/
 .netlify/
 
-
-.test-results/*
-feed.xml
+# Hugo output
+public/
+resources/_gen/
+.hugo_build.lock

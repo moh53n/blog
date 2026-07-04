@@ -1,0 +1,22 @@
+baseURL = "https://moh53n.net/blog/"
+locale = "en-US"
+title = "Mohsen Tahmasebi | Blog"
+enableRobotsTXT = true
+disableKinds = ["section", "taxonomy", "term"]
+
+[params]
+author = "Mohsen Tahmasebi"
+description = "Writing by Mohsen Tahmasebi on software, infrastructure, networks, cybersecurity, BGP, IoT, and technology."
+siteName = "Mohsen Tahmasebi | Blog"
+twitterCreator = "@moh53n"
+twitterSite = "@moh53n"
+
+[permalinks.page]
+blog = "/:slug/"
+
+[outputs]
+home = ["HTML", "RSS"]
+
+[outputFormats.RSS]
+baseName = "feed"
+mediaType = "application/rss+xml"

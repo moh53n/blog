@@ -129,14 +129,11 @@ a:focus-visible {
 }
 
 .portfolio-hero h2 {
-  margin: 0;
-  letter-spacing: 0;
-}
-
-.portfolio-hero h2 {
   max-width: 100%;
+  margin: 0;
   font-size: clamp(1.6rem, 5vw, 3.25rem);
   line-height: 1;
+  letter-spacing: 0;
   white-space: nowrap;
 }
 
@@ -400,5 +397,4 @@ a:focus-visible {
   .portfolio-hero h2 {
     white-space: normal;
   }
-
 }

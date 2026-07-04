@@ -1,0 +1,28 @@
+<section class="portfolio-hero" aria-labelledby="latest-posts-title">
+  <h2 id="latest-posts-title">{{ .Title }}</h2>
+</section>
+
+<section class="portfolio-section">
+  <div class="blog-post-list" aria-label="{{ .Title }}">
+    {{- $pages := .Pages }}
+    {{- if .IsHome }}
+      {{- $pages = where .Site.RegularPages "Section" "blog" }}
+    {{- end }}
+    {{- range $pages.ByDate.Reverse }}
+      {{- $href := .RelPermalink }}
+      {{- with .Params.external_url }}
+        {{- $href = . }}
+      {{- end }}
+      <article class="blog-post-card">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+        <h3>{{ .Title }}</h3>
+        {{- with .Description }}
+          <p>{{ . }}</p>
+        {{- end }}
+        <a href="{{ $href }}" aria-label="Read more about {{ .Title }}">
+          Read more
+        </a>
+      </article>
+    {{- end }}
+  </div>
+</section>
