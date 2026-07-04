@@ -3,9 +3,10 @@
     <h2 id="post-title">{{ .Title }}</h2>
   </section>
 
-  <section class="portfolio-section">
-    <article class="blog-post-card">
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+  <section class="portfolio-section post-section">
+    <article class="blog-post-content">
+      {{- $author := .Params.author | default .Site.Params.author }}
+      <p class="post-meta">{{ $author }}, <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time></p>
       {{- with .Description }}
         <p>{{ . }}</p>
       {{- end }}

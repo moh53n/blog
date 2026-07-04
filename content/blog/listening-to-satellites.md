@@ -1,6 +1,7 @@
 ---
 title: "Listening To Satellites: A Journey With My RTL-SDR V3"
 date: 2023-04-27
+author: "Mohsen Tahmasebi"
 description: "Receiving satellite signals with an RTL-SDR V3, homemade antenna experiments, and a lot of patient radio work."
 tags:
   - radio

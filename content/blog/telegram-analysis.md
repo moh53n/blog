@@ -1,6 +1,7 @@
 ---
 title: "3 Months in Telegram, The analysis of 75,000 Persian Telegram channels"
 date: 2021-05-13
+author: "Mohsen Tahmasebi"
 description: "A large-scale look at Persian Telegram channels, including copied content, APK distribution, phishing, malware, VAS ads, and betting campaigns."
 tags:
   - telegram

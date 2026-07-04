@@ -11,6 +11,9 @@ siteName = "Mohsen Tahmasebi | Blog"
 twitterCreator = "@moh53n"
 twitterSite = "@moh53n"
 
+[pagination]
+pagerSize = 5
+
 [permalinks.page]
 blog = "/:slug/"
 
