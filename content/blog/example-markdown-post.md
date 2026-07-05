@@ -5,7 +5,7 @@ author: "Mohsen Tahmasebi"
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, recusandae quidem. Id, nihil minima minus quidem voluptates voluptas"
 tags:
   - sample
-draft: false
+draft: true
 slug: "example-markdown-post"
 ---
 
