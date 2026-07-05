@@ -378,69 +378,6 @@ a:focus-visible {
   padding-top: 2rem;
 }
 
-.subscribe-form {
-  display: flex;
-  width: min(100%, 340px);
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  background-color: var(--color-surface);
-}
-
-.subscribe-form__label {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
-.subscribe-form input,
-.subscribe-form button {
-  min-height: 2.65rem;
-  border: 0;
-  font: inherit;
-}
-
-.subscribe-form input {
-  min-width: 0;
-  flex: 1;
-  background-color: transparent;
-  padding: 0 0.9rem;
-  color: var(--color-text);
-}
-
-.subscribe-form input::placeholder {
-  color: var(--color-muted);
-  opacity: 1;
-}
-
-.subscribe-form button {
-  flex: 0 0 auto;
-  border-left: 1px solid var(--color-border);
-  background-color: rgba(255, 255, 255, 0.11);
-  padding: 0 1rem;
-  color: var(--color-text);
-  cursor: pointer;
-  font-weight: 800;
-  transition:
-    background-color 180ms ease,
-    color 180ms ease;
-}
-
-.subscribe-form:focus-within {
-  outline: 2px solid var(--color-focus);
-  outline-offset: 4px;
-}
-
-.subscribe-form button:hover,
-.subscribe-form button:focus-visible {
-  background-color: var(--color-surface-hover);
-  color: #fff;
-}
-
 .contact-social {
   display: flex;
   flex-wrap: wrap;
@@ -543,10 +480,6 @@ a:focus-visible {
     justify-content: flex-start;
   }
 
-  .subscribe-form {
-    width: 100%;
-    max-width: 420px;
-  }
 }
 
 @media (max-width: 600px) {
