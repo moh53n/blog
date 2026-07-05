@@ -23,4 +23,3 @@ home = ["HTML", "RSS"]
 [outputFormats.RSS]
 baseName = "feed"
 mediaType = "application/rss+xml"
-protocol = "https://"
