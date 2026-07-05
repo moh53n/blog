@@ -6,7 +6,7 @@ disableKinds = ["section", "taxonomy", "term"]
 
 [params]
 author = "Mohsen Tahmasebi"
-description = "Writing by Mohsen Tahmasebi on software, infrastructure, networks, cybersecurity, BGP, IoT, and technology."
+description = "Notes by Mohsen Tahmasebi"
 siteName = "Mohsen Tahmasebi | Blog"
 twitterCreator = "@moh53n"
 twitterSite = "@moh53n"
@@ -23,3 +23,4 @@ home = ["HTML", "RSS"]
 [outputFormats.RSS]
 baseName = "feed"
 mediaType = "application/rss+xml"
+protocol = "https://"
