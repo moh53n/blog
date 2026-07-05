@@ -1,5 +1,5 @@
 baseURL = "https://moh53n.net/blog/"
-locale = "en-US"
+languageCode = "en-US"
 title = "Mohsen Tahmasebi | Blog"
 enableRobotsTXT = true
 disableKinds = ["section", "taxonomy", "term"]
