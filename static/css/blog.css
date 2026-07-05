@@ -572,3 +572,23 @@ a:focus-visible {
     padding: 24px 0;
   }
 }
+
+@media (max-width: 380px) {
+  .contact-social {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0.35rem;
+  }
+
+  .contact-social a {
+    flex: 0 0 2.25rem;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .contact-social img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
