@@ -6,9 +6,6 @@
   <section class="portfolio-section post-section">
     <article class="blog-post-content">
       {{ partial "post-meta.html" . }}
-      {{- with .Description }}
-        <p>{{ . }}</p>
-      {{- end }}
       {{ .Content }}
       {{- if .Params.external_url }}
         {{- $externalLabel := "Read more on Medium" }}
