@@ -280,13 +280,9 @@ So I read [this post](https://www.sotabeams.co.uk/blog/biast-for-lnb-a-few-note
   caption="The dish"
 >}}
 
-I powered the circuit, pointed the dish, and it worked!
+I powered the circuit, pointed the dish, and [it worked!](https://x.com/moh53n_fa/status/1557827938896191488)
 
 You can listen to QO-100 online [here](https://eshail.batc.org.uk/).
-
-{{
-  <blockquote class="twitter-tweet"><p lang="fa" dir="rtl">بالاخره آخرین بخش پروژه ام مربوط به رصد سیگنال ماهواره ها هم تموم شد و موفق شدم با ساخت یک bias t ساده و ستاپ کلی دیش و lnb مخصوص، سیگنال رادیو آماتوری ماهواره Es&#39;hail 2 یا همون QO-100 رو بگیرم. این ماهواره در مدار GEO و باند X هست که چالش های بیشتری نسبت به کارای قبلیم داشت. 1/2 <a href="https://t.co/3qKoX94FGK">pic.twitter.com/3qKoX94FGK</a></p>&mdash; Mohsen Tahmasebi 🇺🇦 (@moh53n_fa) <a href="https://x.com/moh53n_fa/status/1557827938896191488?ref_src=twsrc%5Etfw">August 11, 2022</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
-}}
 
 ## The Conclusion
 
