@@ -21,7 +21,9 @@
       {{- end }}
       <article class="blog-post-card">
         {{ partial "post-meta.html" . }}
-        <h3>{{ .Title }}</h3>
+        <h3>
+          <a href="{{ $href }}">{{ .Title }}</a>
+        </h3>
         {{- with .Description }}
           <p>{{ . }}</p>
         {{- end }}

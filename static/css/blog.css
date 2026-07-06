@@ -294,6 +294,18 @@ a:focus-visible {
   overflow-wrap: break-word;
 }
 
+.blog-post-card h3 a {
+  display: inline;
+  margin-top: 0;
+  color: var(--color-text);
+  font: inherit;
+}
+
+.blog-post-card h3 a:hover,
+.blog-post-card h3 a:focus-visible {
+  color: var(--color-text);
+}
+
 .blog-post-card p:not(.post-meta) {
   max-width: 46rem;
   margin: 0.65rem 0 0;
