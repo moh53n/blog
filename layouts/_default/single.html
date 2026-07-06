@@ -10,8 +10,12 @@
         <p>{{ . }}</p>
       {{- end }}
       {{ .Content }}
-      {{- with .Params.external_url }}
-        <a href="{{ . }}">Read on Medium</a>
+      {{- if .Params.external_url }}
+        {{- $externalLabel := "Read more on Medium" }}
+        {{- with .Params.external_label }}
+          {{- $externalLabel = . }}
+        {{- end }}
+        <a href="{{ .Params.external_url }}">{{ $externalLabel }}</a>
       {{- end }}
     </article>
   </section>

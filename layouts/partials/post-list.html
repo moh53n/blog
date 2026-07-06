@@ -11,8 +11,13 @@
     {{- $paginator := .Paginate ($pages.ByDate.Reverse) }}
     {{- range $paginator.Pages }}
       {{- $href := .RelPermalink }}
-      {{- with .Params.external_url }}
-        {{- $href = . }}
+      {{- $readMoreLabel := "Read more" }}
+      {{- if .Params.external_url }}
+        {{- $href = .Params.external_url }}
+        {{- $readMoreLabel = "Read more on Medium" }}
+        {{- with .Params.external_label }}
+          {{- $readMoreLabel = . }}
+        {{- end }}
       {{- end }}
       <article class="blog-post-card">
         {{ partial "post-meta.html" . }}
@@ -20,8 +25,8 @@
         {{- with .Description }}
           <p>{{ . }}</p>
         {{- end }}
-        <a href="{{ $href }}" aria-label="Read more about {{ .Title }}">
-          Read more
+        <a href="{{ $href }}" aria-label="{{ $readMoreLabel }}: {{ .Title }}">
+          {{ $readMoreLabel }}
         </a>
       </article>
     {{- end }}
