@@ -4,6 +4,7 @@
       <header class="post-header">
         <h1 id="post-title">{{ .Title }}</h1>
         {{ partial "post-meta.html" . }}
+        <hr class="post-header__divider" aria-hidden="true">
       </header>
       {{ .Content }}
       {{- if .Params.external_url }}

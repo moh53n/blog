@@ -364,6 +364,12 @@ a:focus-visible {
   line-height: 1.45;
 }
 
+.post-header .post-header__divider {
+  margin: 0.5rem 0 0;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+}
+
 .blog-post-content p {
   margin: 0 0 1.35rem;
   overflow-wrap: break-word;
