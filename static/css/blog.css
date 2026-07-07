@@ -396,18 +396,12 @@ a:focus-visible {
 }
 
 .blog-post-content a {
-  color: var(--color-text);
-  font-weight: 700;
-  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.16em;
   overflow-wrap: anywhere;
-}
-
-.blog-post-content a:hover,
-.blog-post-content a:focus-visible {
-  color: var(--color-focus);
-  text-decoration: underline;
+  transition: none;
 }
 
 .blog-post-content ul,
