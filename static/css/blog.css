@@ -330,31 +330,171 @@ a:focus-visible {
   color: var(--color-focus);
 }
 
-.blog-post-content {
-  width: min(100%, 860px);
-  color: var(--color-muted);
-  font-size: 1rem;
-  line-height: 1.85;
+.post-section {
+  padding-top: clamp(1.5rem, 4vw, 3.5rem);
 }
 
-.blog-post-content p {
-  margin: 0 0 1rem;
+.blog-post-content {
+  width: min(100%, 720px);
+  margin: 0 auto;
+  color: rgba(244, 244, 245, 0.88);
+  font-size: 1.06rem;
+  line-height: 1.82;
+}
+
+.post-header {
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.post-header h1 {
+  margin: 0 0 0.85rem;
+  color: var(--color-text);
+  font-size: 3.35rem;
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: 0;
   overflow-wrap: break-word;
 }
 
-.blog-post-content .post-meta {
-  margin: 0 0 1rem;
+.post-header .post-meta {
+  margin: 0;
+  color: rgba(184, 188, 197, 0.9);
+  font-size: 0.94rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.blog-post-content p {
+  margin: 0 0 1.35rem;
+  overflow-wrap: break-word;
+}
+
+.blog-post-content h2,
+.blog-post-content h3,
+.blog-post-content h4 {
+  color: var(--color-text);
+  letter-spacing: 0;
+  overflow-wrap: break-word;
+}
+
+.blog-post-content h2 {
+  margin: 3rem 0 1rem;
+  font-size: 1.65rem;
+  line-height: 1.22;
+}
+
+.blog-post-content h3 {
+  margin: 2.4rem 0 0.85rem;
+  font-size: 1.34rem;
+  line-height: 1.28;
+}
+
+.blog-post-content h4 {
+  margin: 2rem 0 0.75rem;
+  font-size: 1.12rem;
+  line-height: 1.35;
 }
 
 .blog-post-content a {
   color: var(--color-text);
   font-weight: 700;
   text-decoration: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  overflow-wrap: anywhere;
 }
 
 .blog-post-content a:hover,
 .blog-post-content a:focus-visible {
   color: var(--color-focus);
+  text-decoration: underline;
+}
+
+.blog-post-content ul,
+.blog-post-content ol {
+  margin: 0 0 1.45rem;
+  padding-left: 1.35rem;
+}
+
+.blog-post-content li {
+  margin-bottom: 0.55rem;
+  padding-left: 0.15rem;
+}
+
+.blog-post-content blockquote {
+  margin: 2rem 0;
+  border-left: 3px solid var(--color-navy-light);
+  padding: 0.1rem 0 0.1rem 1rem;
+  color: rgba(244, 244, 245, 0.76);
+}
+
+.blog-post-content blockquote p:last-child,
+.blog-post-content li:last-child {
+  margin-bottom: 0;
+}
+
+.blog-post-content figure {
+  width: 100%;
+  margin: clamp(2.1rem, 6vw, 3.2rem) 0;
+}
+
+.blog-post-content img,
+.blog-post-content video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 6px;
+}
+
+.blog-post-content > img,
+.blog-post-content > video {
+  margin-top: clamp(2.1rem, 6vw, 3.2rem);
+  margin-bottom: clamp(2.1rem, 6vw, 3.2rem);
+}
+
+.blog-post-content figcaption {
+  max-width: 42rem;
+  margin: 0.75rem auto 0;
+  color: rgba(184, 188, 197, 0.86);
+  font-size: 0.86rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.blog-post-content figcaption p {
+  margin: 0;
+}
+
+.blog-post-content pre,
+.blog-post-content table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.blog-post-content pre {
+  margin: 1.8rem 0;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+}
+
+.blog-post-content code {
+  font-size: 0.92em;
+}
+
+.blog-post-content :not(pre) > code {
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 0.08rem 0.28rem;
+}
+
+.blog-post-content hr {
+  margin: 3rem 0;
+  border: 0;
+  border-top: 1px solid var(--color-border);
 }
 
 .contact-band a {
@@ -484,6 +624,10 @@ a:focus-visible {
 }
 
 @media (max-width: 760px) {
+  .post-header h1 {
+    font-size: 2.7rem;
+  }
+
   .contact-band {
     align-items: flex-end;
     flex-direction: column;
@@ -510,6 +654,46 @@ a:focus-visible {
   .portfolio-page {
     width: min(100% - 28px, 1120px);
     padding: 20px 0 48px;
+  }
+
+  .post-section {
+    padding-top: 1rem;
+  }
+
+  .blog-post-content {
+    font-size: 1rem;
+    line-height: 1.78;
+  }
+
+  .post-header {
+    margin-bottom: 2rem;
+  }
+
+  .post-header h1 {
+    font-size: 2.05rem;
+    line-height: 1.12;
+  }
+
+  .post-header .post-meta {
+    font-size: 0.88rem;
+  }
+
+  .blog-post-content h2 {
+    margin-top: 2.4rem;
+    font-size: 1.42rem;
+  }
+
+  .blog-post-content h3 {
+    font-size: 1.22rem;
+  }
+
+  .blog-post-content figure {
+    margin: 2rem 0;
+  }
+
+  .blog-post-content figcaption {
+    font-size: 0.82rem;
+    text-align: left;
   }
 
   .not-found-page {
